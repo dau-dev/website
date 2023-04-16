@@ -60,7 +60,7 @@
 			</div>
 			<h5 class="text-lg font-bold mb-4">Flexible</h5>
 			<p class="text-gray-400">
-				The dau engine can be deployed on most modern hardware, deployable on FPGS targets ranging
+				The dau engine can be deployed on most modern hardware, deployable on FPGAs targets ranging
 				from hobbyist tier through enterprise
 			</p>
 		</div>
