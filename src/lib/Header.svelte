@@ -82,7 +82,7 @@
 				<a
 					href="#contact"
 					class="block text-sm px-2 py-4 text-neutral-200 hover:bg-neutral-500 transition duration-300"
-					>Contact Us</a
+					>Contact</a
 				>
 			</li>
 		</ul>
