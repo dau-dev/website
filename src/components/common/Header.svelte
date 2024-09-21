@@ -33,7 +33,7 @@
 				</div>
 
 				<!-- Secondary Navbar items -->
-				<div class="hidden md:flex items-center space-x-3 ">
+				<div class="hidden md:flex items-center space-x-3">
 					<a
 						href="#contact"
 						class="py-2 px-2 font-medium text-white bg-neutral-800 rounded hover:bg-neutral-400 transition duration-300"
@@ -46,7 +46,7 @@
 			<div class="md:hidden flex items-center">
 				<button class="outline-none mobile-menu-button">
 					<svg
-						class=" w-6 h-6 text-neutral-300 hover:text-neutral-500 "
+						class=" w-6 h-6 text-neutral-300 hover:text-neutral-500"
 						x-show="!showMenu"
 						fill="none"
 						stroke-linecap="round"
