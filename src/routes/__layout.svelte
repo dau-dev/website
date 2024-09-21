@@ -5,7 +5,7 @@
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative bg-dark overflow-hidden h-max	 ">
+<div class="relative bg-dark overflow-hidden h-max">
 	<Header />
 	<slot />
 	<Footer />
