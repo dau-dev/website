@@ -1,8 +1,9 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-const colors = require('tailwindcss/colors');
+/** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme';
+import colors from 'tailwindcss/colors';
 
-const config = {
-	content: ['./src/**/*.{html,js,svelte}'],
+export default {
+	content: ['./src/**/*.{html,js,svelte,ts}'],
 	darkMode: 'class',
 	theme: {
 		extend: {
@@ -50,11 +51,9 @@ const config = {
 		}
 	},
 	plugins: [
-		require('@tailwindcss/forms'),
-		require('@tailwindcss/line-clamp'),
-		require('@tailwindcss/typography'),
-		require('@tailwindcss/aspect-ratio')
+		// import('@tailwindcss/forms'),
+		// import('@tailwindcss/line-clamp'),
+		// import('@tailwindcss/typography'),
+		// import('@tailwindcss/aspect-ratio')
 	]
 };
-
-module.exports = config;

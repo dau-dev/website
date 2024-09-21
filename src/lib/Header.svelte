@@ -1,4 +1,7 @@
 <script>
+	/**
+	 * @type {number}
+	 */
 	let y;
 </script>
 
@@ -27,7 +30,7 @@
 				<div class="hidden md:flex items-center space-x-1">
 					<a
 						href="#about"
-						class="py-4 px-2 text-neutral-300 font-semibold hover:text-neutral-500 transition duration-300"
+						class="py-2 px-2 rounded text-neutral-300 font-semibold hover:text-neutral-500 hover:bg-neutral-800 transition duration-300"
 						>About</a
 					>
 				</div>
@@ -36,7 +39,7 @@
 				<div class="hidden md:flex items-center space-x-3">
 					<a
 						href="#contact"
-						class="py-2 px-2 font-medium text-white bg-neutral-800 rounded hover:bg-neutral-400 transition duration-300"
+						class="py-2 px-2 rounded text-neutral-300 font-semibold hover:text-neutral-500 hover:bg-neutral-800 transition duration-300"
 						>Contact</a
 					>
 				</div>
