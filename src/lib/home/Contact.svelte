@@ -15,7 +15,7 @@
 				</p>
 				<div class="mt-10 flex items-center justify-center gap-x-6">
 					<a
-						href="mailto:dev@dau.dev?subject=More Information"
+						href="mailto:dev@1kbgz.com?subject=More Information"
 						class="rounded-md bg-white px-3.5 py-1.5 text-base font-semibold leading-7 text-neutral-900 shadow-sm hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
 						>Reach Out</a
 					>
