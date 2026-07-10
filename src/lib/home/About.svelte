@@ -22,8 +22,8 @@
 			</div>
 			<h5 class="text-lg font-bold mb-4">Composable operator tiles</h5>
 			<p class="text-gray-400">
-				A library of query operator tiles — filter, map, sort, partition, grouped aggregate, and join —
-				wired together on an on-chip network to execute your query graph directly in hardware
+				A library of query operator tiles — filter, map, sort, partition, grouped aggregate, and
+				join — wired together on an on-chip network to execute your query graph directly in hardware
 			</p>
 		</div>
 		<div class="mb-12 md:mb-0">
@@ -45,8 +45,8 @@
 			</div>
 			<h5 class="text-lg font-bold mb-4">Extremely fast</h5>
 			<p class="text-gray-400">
-				Data streams through the operator tiles as Arrow record batches over PCIe, keeping the pipeline
-				saturated for high-throughput, latency-sensitive workloads
+				Data streams through the operator tiles as Arrow record batches over PCIe, keeping the
+				pipeline saturated for high-throughput, latency-sensitive workloads
 			</p>
 		</div>
 		<div class="mb-12 md:mb-0">
@@ -65,9 +65,9 @@
 			<h5 class="text-lg font-bold mb-4">Flexible</h5>
 			<p class="text-gray-400">
 				Drive dau straight from lazy Polars — the engine is aware of which operator tiles are on the
-				fabric and schedules each query onto them, reconfiguring the dataflow to fit and falling back
-				to the CPU for anything it can't accelerate. Targets FPGAs from hobbyist boards to enterprise
-				hardware
+				fabric and schedules each query onto them, reconfiguring the dataflow to fit and falling
+				back to the CPU for anything it can't accelerate. Targets FPGAs from hobbyist boards to
+				enterprise hardware
 			</p>
 		</div>
 	</div>

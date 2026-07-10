@@ -22,3 +22,8 @@ vite.config.ts.timestamp-*
 
 # Tests
 test-results
+
+# AI
+AGENTS.md
+ROADMAP.md
+
