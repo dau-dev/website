@@ -23,6 +23,6 @@
 		</a>
 	</div>
 	<div class="text-center p-2 text-sm">
-		© 2024 <a class="text-white" href="https://dau.dev/">dau.dev</a>
+		© 2026 <a class="text-white" href="https://dau.dev/">dau.dev</a>
 	</div>
 </footer>
