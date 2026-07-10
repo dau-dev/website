@@ -1,7 +1,10 @@
 <section id="about" class="mb-32 text-neutral-300 text-center">
 	<h2 class="text-3xl font-bold mb-12">What is <span class="text-white">dau</span>?</h2>
 	<p class="text-xl mb-12">
-		dau is an integrated hardware/software platform for accelerating streaming computations
+		dau is an integrated hardware/software platform for accelerating analytical queries. It maps
+		SQL-style operators onto a reconfigurable, tile-based dataflow engine on an FPGA, streams your
+		data through it as Arrow record batches, and drives the whole thing from a familiar dataframe
+		API.
 	</p>
 	<div class="grid md:grid-cols-3 lg:gap-x-12">
 		<div class="mb-12 md:mb-0">
@@ -17,10 +20,10 @@
 					<path d="M20,13H13v8h7a1,1,0,0,0,1-1V14A1,1,0,0,0,20,13Z" />
 				</svg>
 			</div>
-			<h5 class="text-lg font-bold mb-4">Composable cores</h5>
+			<h5 class="text-lg font-bold mb-4">Composable operator tiles</h5>
 			<p class="text-gray-400">
-				dau contains a large number of composable compute cores, from the simplest filtering
-				operations to the most complicated streaming joins
+				A library of query operator tiles — filter, map, sort, partition, grouped aggregate, and join —
+				wired together on an on-chip network to execute your query graph directly in hardware
 			</p>
 		</div>
 		<div class="mb-12 md:mb-0">
@@ -42,7 +45,8 @@
 			</div>
 			<h5 class="text-lg font-bold mb-4">Extremely fast</h5>
 			<p class="text-gray-400">
-				dau is optimized for high-throughput, latency sensitive deployments
+				Data streams through the operator tiles as Arrow record batches over PCIe, keeping the pipeline
+				saturated for high-throughput, latency-sensitive workloads
 			</p>
 		</div>
 		<div class="mb-12 md:mb-0">
@@ -60,8 +64,10 @@
 			</div>
 			<h5 class="text-lg font-bold mb-4">Flexible</h5>
 			<p class="text-gray-400">
-				The dau engine can be deployed on most modern hardware, deployable on FPGAs targets ranging
-				from hobbyist tier through enterprise
+				Drive dau straight from lazy Polars — the engine is aware of which operator tiles are on the
+				fabric and schedules each query onto them, reconfiguring the dataflow to fit and falling back
+				to the CPU for anything it can't accelerate. Targets FPGAs from hobbyist boards to enterprise
+				hardware
 			</p>
 		</div>
 	</div>

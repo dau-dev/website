@@ -9,9 +9,9 @@
 			<div class="mx-auto text-center lg:mx-0 lg:flex-auto lg:py-32">
 				<h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Find out more.</h2>
 				<p class="mt-6 text-lg leading-8 text-white">
-					dau is currently under active development
+					dau is an early-stage project under active development, and the design is still evolving
 					<br />
-					Reach out via email, or learn more on our GitHub.
+					Reach out via email, or follow along on our GitHub.
 				</p>
 				<div class="mt-10 flex items-center justify-center gap-x-6">
 					<a
