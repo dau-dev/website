@@ -1,0 +1,16 @@
+{
+	"name": "dau — Data. Accelerated.",
+	"short_name": "dau",
+	"description": "Reconfigurable computing for analytical workloads at every scale.",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#111111",
+	"theme_color": "#111111",
+	"icons": [
+		{
+			"src": "/favicon.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		}
+	]
+}
