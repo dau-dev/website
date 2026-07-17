@@ -1,74 +1,69 @@
-<section id="about" class="mb-32 text-neutral-300 text-center">
-	<h2 class="text-3xl font-bold mb-12">What is <span class="text-white">dau</span>?</h2>
-	<p class="text-xl mb-12">
-		dau is an integrated hardware/software platform for accelerating analytical queries. It maps
-		SQL-style operators onto a reconfigurable, tile-based dataflow engine on an FPGA, streams your
-		data through it as Arrow record batches, and drives the whole thing from a familiar dataframe
-		API.
-	</p>
-	<div class="grid md:grid-cols-3 lg:gap-x-12">
-		<div class="mb-12 md:mb-0">
-			<div class="p-3 bg-neutral-800 rounded-lg shadow-lg inline-block mb-6">
-				<svg
-					class="w-8 h-8 text-white"
-					fill="white"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 24 24"
-				>
-					<path d="M16,4a1,1,0,0,0-1-1H9A1,1,0,0,0,8,4v7h8Z" />
-					<path d="M3,14v6a1,1,0,0,0,1,1h7V13H4A1,1,0,0,0,3,14Z" />
-					<path d="M20,13H13v8h7a1,1,0,0,0,1-1V14A1,1,0,0,0,20,13Z" />
-				</svg>
-			</div>
-			<h5 class="text-lg font-bold mb-4">Composable operator tiles</h5>
-			<p class="text-gray-400">
-				A library of query operator tiles — filter, map, sort, partition, grouped aggregate, and
-				join — wired together on an on-chip network to execute your query graph directly in hardware
+<section id="platform" class="px-6 py-24 text-neutral-300">
+	<div class="max-w-6xl mx-auto">
+		<div class="max-w-3xl mb-16">
+			<p class="uppercase tracking-widest text-sm text-neutral-500 mb-4">
+				One platform, every scale
+			</p>
+			<h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+				Purpose-built computing without a purpose-built workflow.
+			</h2>
+			<p class="text-lg md:text-xl leading-relaxed">
+				dau is building a hardware and software platform that transforms analytical workloads into
+				reconfigurable dataflow. Flash the architecture your work needs, run it through familiar
+				data tools, and scale the same model from your desk to the data center.
 			</p>
 		</div>
-		<div class="mb-12 md:mb-0">
-			<div class="p-3 bg-neutral-800 rounded-lg shadow-lg inline-block mb-6">
-				<svg
-					class="w-8 h-8 text-white"
-					fill="white"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 512 512"
-				>
-					<g>
-						<polygon
-							class="st0"
-							points="386.415,193.208 287.481,193.208 359.434,0 161.566,0 125.585,280.151 206.528,280.151 170.557,512 	
-							"
-						/>
-					</g>
-				</svg>
-			</div>
-			<h5 class="text-lg font-bold mb-4">Extremely fast</h5>
-			<p class="text-gray-400">
-				Data streams through the operator tiles as Arrow record batches over PCIe, keeping the
-				pipeline saturated for high-throughput, latency-sensitive workloads
-			</p>
+
+		<div class="grid lg:grid-cols-2 gap-6 mb-20">
+			<article class="rounded-xl border border-neutral-800 bg-neutral-900 p-8 md:p-10">
+				<p class="text-sm uppercase tracking-widest text-neutral-500 mb-4">Personal computing</p>
+				<h3 class="text-2xl md:text-3xl font-bold text-white mb-5">An accelerator beside you.</h3>
+				<p class="text-neutral-400 leading-relaxed mb-8">
+					A consumer device designed for plug-and-play. Variable configurations for variable
+					workflows from the comfort of your laptop or workstation. A pocket-sized, reconfigureable
+					accelerator.
+				</p>
+				<p class="text-white">Portable · Flashable · Developer-friendly</p>
+			</article>
+
+			<article class="rounded-xl border border-neutral-700 bg-neutral-800 p-8 md:p-10">
+				<p class="text-sm uppercase tracking-widest text-neutral-400 mb-4">
+					High-performance systems
+				</p>
+				<h3 class="text-2xl md:text-3xl font-bold text-white mb-5">
+					A fabric built around your data.
+				</h3>
+				<p class="text-neutral-300 leading-relaxed mb-8">
+					Four, eight, or more accelerator cards working as one system. An enterprise platform
+					envisioned for massive analytical throughput, low-latency pipelines, and real-time
+					computing at data-center scale.
+				</p>
+				<p class="text-white">Parallel · Composable · Scalable</p>
+			</article>
 		</div>
-		<div class="mb-12 md:mb-0">
-			<div class="p-3 bg-neutral-800 rounded-lg shadow-lg inline-block mb-6">
-				<svg
-					class="w-8 h-8 text-white"
-					fill="white"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 1920 1920"
-				>
-					<path
-						d="M1752.768 221.109C1532.646.986 1174.283.986 954.161 221.109l-838.588 838.588c-154.052 154.165-154.052 404.894 0 558.946 149.534 149.421 409.976 149.308 559.059 0l758.738-758.626c87.982-88.094 87.982-231.417 0-319.51-88.32-88.208-231.642-87.982-319.51 0l-638.796 638.908 79.85 79.849 638.795-638.908c43.934-43.821 115.539-43.934 159.812 0 43.934 44.047 43.934 115.877 0 159.812l-758.739 758.625c-110.23 110.118-289.355 110.005-399.36 0-110.118-110.117-110.005-289.242 0-399.247l838.588-838.588c175.963-175.962 462.382-176.188 638.909 0 176.075 176.188 176.075 462.833 0 638.908l-798.607 798.72 79.849 79.85 798.607-798.72c220.01-220.123 220.01-578.485 0-798.607"
-					/>
-				</svg>
+
+		<div id="technology" class="grid md:grid-cols-3 gap-10 scroll-mt-24">
+			<div>
+				<h3 class="text-xl font-bold text-white mb-4">Shape hardware to work</h3>
+				<p class="text-neutral-400 leading-relaxed">
+					Compose filtering, transformation, aggregation, partitioning, and other analytical
+					operations into streaming hardware pipelines.
+				</p>
 			</div>
-			<h5 class="text-lg font-bold mb-4">Flexible</h5>
-			<p class="text-gray-400">
-				Drive dau straight from lazy Polars — the engine is aware of which operator tiles are on the
-				fabric and schedules each query onto them, reconfiguring the dataflow to fit and falling
-				back to the CPU for anything it can't accelerate. Targets FPGAs from hobbyist boards to
-				enterprise hardware
-			</p>
+			<div>
+				<h3 class="text-xl font-bold text-white mb-4">Keep software familiar</h3>
+				<p class="text-neutral-400 leading-relaxed">
+					Connect reconfigurable compute to dataframe and analytical interfaces instead of rewriting
+					workflows around low-level hardware APIs.
+				</p>
+			</div>
+			<div>
+				<h3 class="text-xl font-bold text-white mb-4">Scale the architecture</h3>
+				<p class="text-neutral-400 leading-relaxed">
+					Carry workload configurations across device classes, from accessible personal hardware to
+					arrays designed for extreme throughput.
+				</p>
+			</div>
 		</div>
 	</div>
 </section>

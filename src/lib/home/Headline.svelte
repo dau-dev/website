@@ -1,17 +1,38 @@
-<section id="home" class="mb-32 text-gray-800 w-full h-screen text-center">
+<section id="home" class="text-gray-800 w-full min-h-screen text-center">
 	<div
-		class="relative overflow-hidden bg-no-repeat bg-cover w-full h-full"
+		class="relative overflow-hidden bg-no-repeat bg-cover w-full min-h-screen"
 		style="
 	  background-position: 50%;
-	  background-image: url('img/main-bg.jpg');
+	  background-image: url('/img/main-bg.jpg');
+	  background-image: image-set(
+	    url('/img/main-bg.webp') type('image/webp'),
+	    url('/img/main-bg.jpg') type('image/jpeg')
+	  );
 	"
 	>
-		<div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed">
-			<div class="flex justify-center items-center h-full">
-				<div class="text-center text-white px-6 md:px-12">
-					<h1 class="text-6xl md:text-7xl xl:text-8xl font-bold tracking-tight mb-12">DAU.</h1>
-					<h2 class="text-xl md:text-2xl xl:text-3xl tracking-tight">Data</h2>
-					<h2 class="text-xl md:text-2xl xl:text-3xl tracking-tight italic mb-12">Accelerated.</h2>
+		<div class="absolute inset-0 w-full min-h-screen bg-black bg-opacity-30">
+			<div class="flex justify-center items-center min-h-screen">
+				<div class="max-w-4xl text-center text-white px-6 md:px-12">
+					<h1 class="text-6xl md:text-7xl xl:text-8xl font-bold tracking-tight mb-8">dau.</h1>
+					<p class="text-2xl md:text-3xl xl:text-4xl tracking-tight mb-6">
+						Data. <span class="italic">Accelerated.</span>
+					</p>
+					<p class="max-w-3xl mx-auto text-lg md:text-xl text-neutral-200 leading-relaxed mb-10">
+						Reconfigurable computing for analytical workloads—from a personal accelerator beside
+						your laptop to arrays built for real-time, data-center-scale performance.
+					</p>
+					<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+						<a
+							href="#platform"
+							class="rounded-md bg-white px-5 py-3 text-base font-semibold text-neutral-900 shadow-sm hover:bg-neutral-100"
+							>Explore the platform</a
+						>
+						<a
+							href="#contact"
+							class="rounded-md border border-white px-5 py-3 text-base font-semibold text-white hover:bg-white hover:bg-opacity-10"
+							>Build with us</a
+						>
+					</div>
 				</div>
 			</div>
 		</div>
