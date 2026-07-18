@@ -15,7 +15,7 @@
 				<div class="flex items-start justify-between gap-6 mb-5">
 					<div>
 						<p class="text-sm uppercase tracking-widest text-neutral-500 mb-2">dpv1 · Proven</p>
-						<h3 class="text-2xl font-bold text-white">Consume accelerator</h3>
+						<h3 class="text-2xl font-bold text-white">Consumet accelerator</h3>
 					</div>
 					<p class="text-sm text-neutral-400 whitespace-nowrap">Initial platform</p>
 				</div>
@@ -49,7 +49,9 @@
 					<p class="text-sm text-neutral-500 whitespace-nowrap">Concept platform</p>
 				</div>
 				<p class="text-lg text-neutral-300 mb-2">1M+ LUTs · 128 GB DDR5 · PCIe x16 · Networked</p>
-				<p class="text-sm text-neutral-500">TODO</p>
+				<p class="text-sm text-neutral-500">
+					Envisions networked accelerator arrays for massive throughput and real-time computing.
+				</p>
 			</div>
 		</div>
 	</div>
