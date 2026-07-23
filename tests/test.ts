@@ -9,11 +9,20 @@ test('home page presents both ends of the dau platform', async ({ page }) => {
 	await expect(
 		page.getByRole('heading', { name: 'A fabric built around your data.' })
 	).toBeVisible();
+	await expect(
+		page.getByRole('heading', { name: 'One platform, four deployment shapes.' })
+	).toBeVisible();
+	await expect(page.getByText('A host-orchestrated dpv1 fleet')).toBeVisible();
+	await expect(page.getByText('Four dpv3 cards in a server')).toBeVisible();
+	await expect(
+		page.getByRole('heading', { name: 'A configuration loop that improves around real work.' })
+	).toBeVisible();
+	await expect(page.getByText('explicit fallback', { exact: false })).toBeVisible();
 	await expect(page.getByText('dpv1 · Proven')).toBeVisible();
 	await expect(page.getByText('dpv2 · Scaling now')).toBeVisible();
-	await expect(page.getByText('dpv3 · Future')).toBeVisible();
+	await expect(page.getByText('dpv3 · Design program')).toBeVisible();
 	await expect(page.getByText('Concept platform')).toBeVisible();
-	await expect(page.getByText('63% faster', { exact: false })).toBeVisible();
+	await expect(page.getByText('39% lower per-query latency', { exact: false })).toBeVisible();
 	await expect(page.getByRole('link', { name: 'Become a design partner' })).toBeVisible();
 });
 
@@ -34,7 +43,7 @@ test('publishes search and social metadata', async ({ page, request }) => {
 	await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', 'https://dau.dev/');
 	await expect(page.locator('meta[name="description"]')).toHaveAttribute(
 		'content',
-		/dau builds reconfigurable computing/
+		/dau selectively maps analytical workloads/
 	);
 	await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
 		'content',

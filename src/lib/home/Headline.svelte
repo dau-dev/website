@@ -2,8 +2,7 @@
 	<div
 		class="relative overflow-hidden bg-no-repeat bg-cover w-full min-h-screen"
 		style="
-	  background-position: 50%;
-	  background-image: url('/img/main-bg.jpg');
+	  background: 50% / cover no-repeat url('/img/main-bg.jpg');
 	  background-image: image-set(
 	    url('/img/main-bg.webp') type('image/webp'),
 	    url('/img/main-bg.jpg') type('image/jpeg')
@@ -18,8 +17,9 @@
 						Data. <span class="italic">Accelerated.</span>
 					</p>
 					<p class="max-w-3xl mx-auto text-lg md:text-xl text-neutral-200 leading-relaxed mb-10">
-						Reconfigurable computing for analytical workloads—from a personal accelerator beside
-						your laptop to arrays built for real-time, data-center-scale performance.
+						dau maps high-value analytical operations into reconfigurable dataflow while the rest
+						stays in familiar software—from a personal accelerator beside your laptop to
+						data-center-scale systems.
 					</p>
 					<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
 						<a

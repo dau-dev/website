@@ -10,7 +10,7 @@
 	<title>dau — Data. Accelerated.</title>
 	<meta
 		name="description"
-		content="dau builds reconfigurable computing for analytical workloads, from personal accelerators to data-center-scale systems."
+		content="dau selectively maps analytical workloads into right-sized, reconfigurable dataflow—from personal accelerators to data-center-scale systems."
 	/>
 	<meta name="robots" content="index, follow, max-image-preview:large" />
 	<link rel="canonical" href="https://dau.dev/" />
@@ -21,7 +21,7 @@
 	<meta property="og:title" content="dau — Data. Accelerated." />
 	<meta
 		property="og:description"
-		content="Reconfigurable computing for analytical workloads at every scale."
+		content="Workload-shaped acceleration for analytical data at every scale."
 	/>
 	<meta property="og:url" content="https://dau.dev/" />
 	<meta property="og:image" content="https://dau.dev/img/main-bg.jpg" />
@@ -33,7 +33,7 @@
 	<meta name="twitter:title" content="dau — Data. Accelerated." />
 	<meta
 		name="twitter:description"
-		content="Reconfigurable computing for analytical workloads at every scale."
+		content="Workload-shaped acceleration for analytical data at every scale."
 	/>
 	<meta name="twitter:image" content="https://dau.dev/img/main-bg.jpg" />
 	<meta name="twitter:image:alt" content="dau — Data. Accelerated." />

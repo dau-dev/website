@@ -2,8 +2,7 @@
 	<div
 		class="mx-auto py-24 sm:px-6 sm:py-32 lg:px-8 bg-no-repeat bg-cover"
 		style="
-			background-position: 50%;
-			background-image: url('/img/contact-bg.jpg');
+			background: 50% / cover no-repeat url('/img/contact-bg.jpg');
 			background-image: image-set(
 				url('/img/contact-bg.webp') type('image/webp'),
 				url('/img/contact-bg.jpg') type('image/jpeg')
