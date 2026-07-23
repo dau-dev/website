@@ -5,6 +5,9 @@ test('home page presents both ends of the dau platform', async ({ page }) => {
 
 	await expect(page.getByRole('heading', { level: 1, name: 'dau.' })).toBeVisible();
 	await expect(page.getByText('Data. Accelerated.')).toBeVisible();
+	await expect(
+		page.getByText('dau maps high-value Polars, dataframe, time-series', { exact: false })
+	).toBeVisible();
 	await expect(page.getByRole('heading', { name: 'An accelerator beside you.' })).toBeVisible();
 	await expect(
 		page.getByRole('heading', { name: 'A fabric built around your data.' })
@@ -39,21 +42,36 @@ test('mobile navigation exposes platform sections', async ({ page }) => {
 test('publishes search and social metadata', async ({ page, request }) => {
 	await page.goto('/');
 
-	await expect(page).toHaveTitle('dau — Data. Accelerated.');
+	await expect(page).toHaveTitle('dau | FPGA acceleration for Polars and analytical workloads');
 	await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', 'https://dau.dev/');
 	await expect(page.locator('meta[name="description"]')).toHaveAttribute(
 		'content',
-		/dau selectively maps analytical workloads/
+		/Polars, dataframe, time-series, and analytical workloads/
 	);
 	await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
 		'content',
-		'https://dau.dev/img/main-bg.jpg'
+		'https://dau.dev/img/social-card.png'
+	);
+	await expect(page.locator('meta[property="og:image:width"]')).toHaveAttribute('content', '1200');
+	await expect(page.locator('meta[property="og:image:height"]')).toHaveAttribute('content', '630');
+	await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute(
+		'content',
+		'summary_large_image'
 	);
 
-	const organization = JSON.parse(
+	const structuredData = JSON.parse(
 		(await page.locator('script[type="application/ld+json"]').textContent()) ?? '{}'
 	);
-	expect(organization).toMatchObject({ '@type': 'Organization', name: 'dau' });
+	expect(structuredData['@graph']).toEqual(
+		expect.arrayContaining([
+			expect.objectContaining({ '@type': 'Organization', name: 'dau' }),
+			expect.objectContaining({ '@type': 'WebSite', name: 'dau' })
+		])
+	);
+
+	const socialCard = await request.get('/img/social-card.png');
+	expect(socialCard.ok()).toBe(true);
+	expect(socialCard.headers()['content-type']).toBe('image/png');
 
 	const robots = await request.get('/robots.txt');
 	expect(robots.ok()).toBe(true);
@@ -62,4 +80,5 @@ test('publishes search and social metadata', async ({ page, request }) => {
 	const sitemap = await request.get('/sitemap.xml');
 	expect(sitemap.ok()).toBe(true);
 	expect(await sitemap.text()).toContain('<loc>https://dau.dev/</loc>');
+	expect(await sitemap.text()).toContain('<lastmod>2026-07-23</lastmod>');
 });

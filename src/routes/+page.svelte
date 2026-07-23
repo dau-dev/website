@@ -7,36 +7,47 @@
 </script>
 
 <svelte:head>
-	<title>dau — Data. Accelerated.</title>
+	<title>dau | FPGA acceleration for Polars and analytical workloads</title>
 	<meta
 		name="description"
-		content="dau selectively maps analytical workloads into right-sized, reconfigurable dataflow—from personal accelerators to data-center-scale systems."
+		content="dau selectively maps Polars, dataframe, time-series, and analytical workloads onto right-sized FPGA dataflow, with CPU fallback and familiar software."
 	/>
 	<meta name="robots" content="index, follow, max-image-preview:large" />
 	<link rel="canonical" href="https://dau.dev/" />
+	<link rel="alternate" hreflang="en" href="https://dau.dev/" />
+	<link rel="alternate" hreflang="x-default" href="https://dau.dev/" />
 	<link rel="preload" as="image" href="/img/main-bg.webp" type="image/webp" fetchpriority="high" />
 
 	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="en_US" />
 	<meta property="og:site_name" content="dau" />
-	<meta property="og:title" content="dau — Data. Accelerated." />
+	<meta property="og:title" content="dau — Workload-shaped FPGA acceleration" />
 	<meta
 		property="og:description"
-		content="Workload-shaped acceleration for analytical data at every scale."
+		content="Right-sized FPGA dataflow for Polars, dataframe, time-series, and analytical workloads—with familiar software and explicit CPU fallback."
 	/>
 	<meta property="og:url" content="https://dau.dev/" />
-	<meta property="og:image" content="https://dau.dev/img/main-bg.jpg" />
-	<meta property="og:image:width" content="1600" />
-	<meta property="og:image:height" content="1288" />
-	<meta property="og:image:alt" content="dau — Data. Accelerated." />
+	<meta property="og:image" content="https://dau.dev/img/social-card.png" />
+	<meta property="og:image:secure_url" content="https://dau.dev/img/social-card.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta
+		property="og:image:alt"
+		content="dau workload-shaped FPGA acceleration platform and configuration flywheel"
+	/>
 
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="dau — Data. Accelerated." />
+	<meta name="twitter:title" content="dau — Workload-shaped FPGA acceleration" />
 	<meta
 		name="twitter:description"
-		content="Workload-shaped acceleration for analytical data at every scale."
+		content="Right-sized FPGA dataflow for Polars, dataframe, time-series, and analytical workloads."
 	/>
-	<meta name="twitter:image" content="https://dau.dev/img/main-bg.jpg" />
-	<meta name="twitter:image:alt" content="dau — Data. Accelerated." />
+	<meta name="twitter:image" content="https://dau.dev/img/social-card.png" />
+	<meta
+		name="twitter:image:alt"
+		content="dau workload-shaped FPGA acceleration platform and configuration flywheel"
+	/>
 </svelte:head>
 
 <Headline />

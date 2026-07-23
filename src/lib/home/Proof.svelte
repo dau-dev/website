@@ -4,10 +4,10 @@
 			<p class="uppercase tracking-widest text-sm text-neutral-500 mb-4">From proof to platform</p>
 			<h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Measured on physical hardware.</h2>
 			<p class="text-lg leading-relaxed text-neutral-400">
-				dau began with a 5 GB NYSE TAQ dataset and a concrete analytical task: calculate OHLCV bars.
-				After staging data on dpv1, repeated queries ran in 0.92 seconds versus 1.5 seconds on the
-				CPU—39% lower per-query latency, with every result matched against the software golden. That
-				measured workflow now informs the next platform configurations.
+				dau began with a 5 GB NYSE TAQ market-data dataset and a concrete time-series analytical
+				task: calculate OHLCV bars. After staging data on dpv1, repeated queries ran in 0.92 seconds
+				versus 1.5 seconds on the CPU—39% lower per-query latency, with every result matched against
+				the software golden. That measured workflow now informs the next platform configurations.
 			</p>
 		</div>
 		<div class="grid gap-4">

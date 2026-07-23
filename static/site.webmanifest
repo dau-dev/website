@@ -1,7 +1,7 @@
 {
 	"name": "dau — Data. Accelerated.",
 	"short_name": "dau",
-	"description": "Reconfigurable computing for analytical workloads at every scale.",
+	"description": "Workload-shaped FPGA acceleration for Polars, dataframe, time-series, and analytical workloads.",
 	"start_url": "/",
 	"display": "standalone",
 	"background_color": "#111111",

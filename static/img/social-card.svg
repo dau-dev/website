@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0b0b"/>
+      <stop offset="1" stop-color="#191919"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity=".035"/>
+    </pattern>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0 0 8 4 0 8Z" fill="#d4d4d4"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="630" rx="32" fill="url(#background)"/>
+  <rect width="1200" height="630" rx="32" fill="url(#grid)"/>
+  <rect x="32" y="32" width="1136" height="566" rx="24" fill="none" stroke="#ffffff" stroke-opacity=".13"/>
+
+  <g fill="#ffffff" font-family="Montserrat, Arial, sans-serif">
+    <text x="84" y="116" font-size="42" font-weight="600">dau.</text>
+    <text x="84" y="226" font-size="60" font-weight="700">Workload-shaped</text>
+    <text x="84" y="296" font-size="60" font-weight="700">FPGA acceleration.</text>
+    <text x="84" y="358" fill="#b8b8b8" font-size="25">Dataframe · Time-series · Analytical workloads</text>
+    <text x="84" y="548" fill="#a3a3a3" font-size="22">dau.dev</text>
+  </g>
+
+  <g transform="translate(690 104)" font-family="Montserrat, Arial, sans-serif">
+    <rect x="0" y="0" width="400" height="422" rx="22" fill="#111111" stroke="#ffffff" stroke-opacity=".18"/>
+    <text x="28" y="44" fill="#8f8f8f" font-size="14" letter-spacing="2">THE DAU FLYWHEEL</text>
+
+    <g fill="#171717" stroke="#737373">
+      <rect x="28" y="72" width="150" height="62" rx="10"/>
+      <rect x="222" y="72" width="150" height="62" rx="10"/>
+      <rect x="222" y="180" width="150" height="62" rx="10"/>
+      <rect x="28" y="180" width="150" height="62" rx="10"/>
+    </g>
+    <g fill="#ffffff" font-size="18" font-weight="600" text-anchor="middle">
+      <text x="103" y="109">Observe</text>
+      <text x="297" y="109">Select</text>
+      <text x="297" y="217">Compose</text>
+      <text x="103" y="217">Verify</text>
+    </g>
+    <g fill="none" stroke="#d4d4d4" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M178 103H215"/>
+      <path d="M297 134V173"/>
+      <path d="M222 211H185"/>
+      <path d="M103 180V142"/>
+    </g>
+
+    <rect x="28" y="286" width="344" height="94" rx="12" fill="#202020" stroke="#ffffff" stroke-opacity=".35"/>
+    <g fill="#ffffff">
+      <text x="48" y="318" font-size="14" letter-spacing="1.5">RIGHT-SIZED CONFIGURATION</text>
+      <rect x="48" y="338" width="52" height="22" rx="4" fill="#555555"/>
+      <rect x="110" y="338" width="52" height="22" rx="4" fill="#737373"/>
+      <rect x="172" y="338" width="52" height="22" rx="4" fill="#8a8a8a"/>
+      <rect x="234" y="338" width="52" height="22" rx="4" fill="#a3a3a3"/>
+      <rect x="296" y="338" width="56" height="22" rx="4" fill="#d4d4d4"/>
+    </g>
+  </g>
+</svg>

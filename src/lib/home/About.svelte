@@ -8,10 +8,10 @@
 				Hardware shaped to your workload. Software that stays familiar.
 			</h2>
 			<p class="text-lg md:text-xl leading-relaxed">
-				dau selectively accelerates the parts of analytical workflows that benefit from streaming
-				hardware. Reusable operations are composed into right-sized configurations, while
-				unsupported work remains in familiar dataframe software. The same model scales from a
-				personal accelerator to multi-card systems.
+				dau selectively accelerates the parts of Polars, dataframe, time-series, and analytical
+				workflows that benefit from streaming FPGA hardware. Reusable operations are composed into
+				right-sized configurations, while unsupported work remains in familiar software. The same
+				model scales from a personal accelerator to multi-card systems.
 			</p>
 		</div>
 

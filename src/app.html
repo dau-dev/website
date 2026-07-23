@@ -16,12 +16,35 @@
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
-				"@type": "Organization",
-				"name": "dau",
-				"url": "https://dau.dev/",
-				"logo": "https://dau.dev/img/dau-dark.png",
-				"description": "Reconfigurable computing for analytical workloads, from personal accelerators to data-center-scale systems.",
-				"sameAs": ["https://github.com/dau-dev"]
+				"@graph": [
+					{
+						"@type": "Organization",
+						"@id": "https://dau.dev/#organization",
+						"name": "dau",
+						"alternateName": "DAU",
+						"url": "https://dau.dev/",
+						"logo": {
+							"@type": "ImageObject",
+							"url": "https://dau.dev/favicon.png",
+							"contentUrl": "https://dau.dev/favicon.png",
+							"width": 128,
+							"height": 128
+						},
+						"description": "dau builds workload-shaped FPGA acceleration for Polars, dataframe, time-series, and analytical computing.",
+						"email": "dev@1kbgz.com",
+						"sameAs": ["https://github.com/dau-dev"]
+					},
+					{
+						"@type": "WebSite",
+						"@id": "https://dau.dev/#website",
+						"url": "https://dau.dev/",
+						"name": "dau",
+						"alternateName": "DAU",
+						"description": "Workload-shaped FPGA acceleration for analytical data.",
+						"inLanguage": "en",
+						"publisher": { "@id": "https://dau.dev/#organization" }
+					}
+				]
 			}
 		</script>
 		%sveltekit.head%
