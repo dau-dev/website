@@ -21,11 +21,13 @@ test('home page presents both ends of the dau platform', async ({ page }) => {
 		page.getByRole('heading', { name: 'A configuration loop that improves around real work.' })
 	).toBeVisible();
 	await expect(page.getByText('explicit fallback', { exact: false })).toBeVisible();
-	await expect(page.getByText('dpv1 · Proven')).toBeVisible();
-	await expect(page.getByText('dpv2 · Scaling now')).toBeVisible();
-	await expect(page.getByText('dpv3 · Design program')).toBeVisible();
-	await expect(page.getByText('Concept platform')).toBeVisible();
+	await expect(page.getByText('dpv1 · Where it started')).toBeVisible();
+	await expect(page.getByText('dpv2 · Current platform')).toBeVisible();
+	await expect(page.getByText('dpv3 · Planned')).toBeVisible();
+	await expect(page.getByText('In design')).toBeVisible();
 	await expect(page.getByText('39% lower per-query latency', { exact: false })).toBeVisible();
+	// the current platform's measured result, not just the origin story
+	await expect(page.getByText('11.5 ms', { exact: false })).toBeVisible();
 	await expect(page.getByRole('link', { name: 'Become a design partner' })).toBeVisible();
 });
 

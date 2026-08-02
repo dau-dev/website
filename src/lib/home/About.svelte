@@ -136,8 +136,8 @@
 					</article>
 				</div>
 				<figcaption class="mt-4 text-sm text-neutral-500">
-					dpv1 is proven hardware, dpv2 is the current scaling platform, and dpv3 is a concept
-					design under development.
+					dpv1 is the first platform and where the approach was proven, dpv2 is the current platform
+					running today, and dpv3 is a planned design.
 				</figcaption>
 			</figure>
 		</div>
