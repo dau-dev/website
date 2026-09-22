@@ -6,21 +6,19 @@ test('home page presents both ends of the dau platform', async ({ page }) => {
 	await expect(page.getByRole('heading', { level: 1, name: 'dau.' })).toBeVisible();
 	await expect(page.getByText('Data. Accelerated.')).toBeVisible();
 	await expect(
-		page.getByText('dau maps high-value Polars, dataframe, time-series', { exact: false })
+		page.getByText('dau maps selected Polars, dataframe, time-series', { exact: false })
 	).toBeVisible();
 	await expect(page.getByRole('heading', { name: 'An accelerator beside you.' })).toBeVisible();
-	await expect(
-		page.getByRole('heading', { name: 'A fabric built around your data.' })
-	).toBeVisible();
+	await expect(page.getByRole('heading', { name: 'Many cards, one workload.' })).toBeVisible();
 	await expect(
 		page.getByRole('heading', { name: 'One platform, four deployment shapes.' })
 	).toBeVisible();
 	await expect(page.getByText('A host-orchestrated dpv1 fleet')).toBeVisible();
 	await expect(page.getByText('Four dpv3 cards in a server')).toBeVisible();
 	await expect(
-		page.getByRole('heading', { name: 'A configuration loop that improves around real work.' })
+		page.getByRole('heading', { name: 'Configurations that improve as workloads are measured.' })
 	).toBeVisible();
-	await expect(page.getByText('explicit fallback', { exact: false })).toBeVisible();
+	await expect(page.getByText('The fallback is explicit', { exact: false })).toBeVisible();
 	await expect(page.getByText('dpv1 · Where it started')).toBeVisible();
 	await expect(page.getByText('dpv2 · Current platform')).toBeVisible();
 	await expect(page.getByText('dpv3 · Planned')).toBeVisible();
