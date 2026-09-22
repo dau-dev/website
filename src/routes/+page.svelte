@@ -24,7 +24,7 @@
 	<meta property="og:title" content="dau — Workload-shaped FPGA acceleration" />
 	<meta
 		property="og:description"
-		content="Right-sized FPGA dataflow for Polars, dataframe, time-series, and analytical workloads—with familiar software and explicit CPU fallback."
+		content="Right-sized FPGA dataflow for Polars, dataframe, time-series, and analytical workloads, with familiar software and explicit CPU fallback."
 	/>
 	<meta property="og:url" content="https://dau.dev/" />
 	<meta property="og:image" content="https://dau.dev/img/social-card.png" />

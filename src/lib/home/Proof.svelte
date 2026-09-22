@@ -42,8 +42,8 @@
 				</div>
 				<p class="text-lg text-white mb-2">204K LUTs · 10 GB DDR3 · PCIe x8</p>
 				<p class="text-sm text-neutral-400">
-					Two memory systems—2 GB onboard for bandwidth, 8 GB SODIMM for resident capacity—and eight
-					parallel lanes. Where the fused temporal workflow now beats the CPU baseline.
+					Two memory systems (2 GB onboard for bandwidth, 8 GB SODIMM for resident capacity) and
+					eight parallel lanes. Where the fused temporal workflow now beats the CPU baseline.
 				</p>
 			</div>
 			<div class="rounded-lg border border-dashed border-neutral-700 p-6 opacity-50">

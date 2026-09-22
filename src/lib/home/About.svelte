@@ -1,17 +1,15 @@
 <section id="platform" class="px-6 py-24 text-neutral-300">
 	<div class="max-w-6xl mx-auto">
 		<div class="max-w-3xl mb-16">
-			<p class="uppercase tracking-widest text-sm text-neutral-500 mb-4">
-				One platform, every scale
-			</p>
+			<p class="uppercase tracking-widest text-sm text-neutral-500 mb-4">The platform</p>
 			<h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
 				Hardware shaped to your workload. Software that stays familiar.
 			</h2>
 			<p class="text-lg md:text-xl leading-relaxed">
-				dau selectively accelerates the parts of Polars, dataframe, time-series, and analytical
-				workflows that benefit from streaming FPGA hardware. Reusable operations are composed into
-				right-sized configurations, while unsupported work remains in familiar software. The same
-				model scales from a personal accelerator to multi-card systems.
+				dau accelerates the parts of Polars, dataframe, time-series, and analytical workflows that
+				suit streaming FPGA hardware. Reusable operations compose into right-sized configurations;
+				unsupported work stays in software. The same model scales from a personal accelerator to
+				multi-card systems.
 			</p>
 		</div>
 
@@ -24,8 +22,7 @@
 					</h3>
 				</div>
 				<p class="max-w-xl text-neutral-400 leading-relaxed">
-					Work stays expressed through the same software model as capacity, memory, and physical
-					placement change.
+					The software model stays the same as capacity, memory, and physical placement change.
 				</p>
 			</div>
 
@@ -136,8 +133,8 @@
 					</article>
 				</div>
 				<figcaption class="mt-4 text-sm text-neutral-500">
-					dpv1 is the first platform and where the approach was proven, dpv2 is the current platform
-					running today, and dpv3 is a planned design.
+					dpv1 was the first platform and where the approach was proven. dpv2 is the current
+					platform, running today. dpv3 is a planned design.
 				</figcaption>
 			</figure>
 		</div>
@@ -147,26 +144,24 @@
 				<p class="text-sm uppercase tracking-widest text-neutral-500 mb-4">Personal computing</p>
 				<h3 class="text-2xl md:text-3xl font-bold text-white mb-5">An accelerator beside you.</h3>
 				<p class="text-neutral-400 leading-relaxed mb-8">
-					An accessible accelerator for laptop and workstation development. Load configurations
-					matched to different analytical workflows without rebuilding applications around low-level
-					hardware APIs.
+					An accelerator for laptop and workstation development. Load a configuration that matches
+					the workflow you are running, without rebuilding the application around low-level hardware
+					APIs.
 				</p>
-				<p class="text-white">Portable · Flashable · Developer-friendly</p>
+				<p class="text-white">Portable · Flashable</p>
 			</article>
 
 			<article class="rounded-xl border border-neutral-700 bg-neutral-800 p-8 md:p-10">
 				<p class="text-sm uppercase tracking-widest text-neutral-400 mb-4">
 					High-performance systems
 				</p>
-				<h3 class="text-2xl md:text-3xl font-bold text-white mb-5">
-					A fabric built around your data.
-				</h3>
+				<h3 class="text-2xl md:text-3xl font-bold text-white mb-5">Many cards, one workload.</h3>
 				<p class="text-neutral-300 leading-relaxed mb-8">
 					Multiple accelerator cards partition data and workflows across independent local memory.
 					The platform is designed to grow resident capacity and analytical throughput from a
 					workstation to fabric-connected server arrays.
 				</p>
-				<p class="text-white">Parallel · Composable · Scalable</p>
+				<p class="text-white">Parallel · Composable</p>
 			</article>
 		</div>
 
@@ -201,11 +196,11 @@
 			<div class="max-w-3xl mb-10">
 				<p class="uppercase tracking-widest text-sm text-neutral-500 mb-4">The dau flywheel</p>
 				<h3 class="text-3xl md:text-4xl font-bold text-white mb-5">
-					A configuration loop that improves around real work.
+					Configurations that improve as workloads are measured.
 				</h3>
 				<p class="text-lg text-neutral-400 leading-relaxed">
-					Workload evidence guides what runs in hardware today and what configuration should be
-					built next. Every deployed design moves through the same verification path.
+					Measurements decide what runs in hardware today and what configuration gets built next.
+					Every deployed design goes through the same verification path.
 				</p>
 			</div>
 
@@ -245,8 +240,8 @@
 				<aside class="rounded-lg border border-dashed border-neutral-700 p-5 lg:max-w-52">
 					<p class="text-sm uppercase tracking-widest text-neutral-500 mb-3">Software path</p>
 					<p class="text-sm text-neutral-300 leading-relaxed">
-						Operations that do not fit the active hardware remain in familiar software with an
-						explicit fallback.
+						Operations the loaded configuration does not cover stay in software. The fallback is
+						explicit.
 					</p>
 				</aside>
 			</div>

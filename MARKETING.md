@@ -11,13 +11,10 @@ maps supported Polars, dataframe, time-series, and domain operations into
 right-sized streaming hardware while unsupported work remains in familiar
 software.
 
-Primary distinction:
-
-- not a fixed database appliance;
-- not per-query synthesis in the runtime path;
-- not a claim that every dataframe operation belongs on an FPGA;
-- a reusable platform whose configurations improve around recurring workloads
-  and scale across device classes.
+DAU is a reusable platform whose configurations improve around recurring
+workloads and scale across device classes. It is not a fixed database
+appliance, it does not synthesize hardware per query in the runtime path, and
+it does not assume that every dataframe operation belongs on an FPGA.
 
 ## Search-intent clusters
 
