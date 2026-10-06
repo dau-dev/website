@@ -6,11 +6,13 @@
 			<p class="text-lg leading-relaxed text-neutral-400">
 				dau began on dpv1 with a 5 GB NYSE TAQ dataset and a concrete task: calculate OHLCV bars.
 				Staged resident, repeated queries ran in 0.92 seconds against 1.5 seconds on the CPU—39%
-				lower per-query latency, every result matched to the software golden. dpv2 now carries that
-				work further: a fused temporal-finance workflow—as-of join, derived features, time bars and
-				rolling moments in a single pass, with no intermediate ever written back to memory—runs in
-				11.5 ms against 31.4 ms for the same workload on an 18-core laptop, bit-exact. The
-				accelerator costs a fraction of the machine it outruns.
+				lower per-query latency, every result matched to the software golden. dpv2 is commodity
+				hardware doing real work: a consumer-grade FPGA card that costs about $700, in a
+				consumer-grade desktop with a quad-core Intel Core i7. With a six-million-row table resident
+				on the card, Polars and the card working the same scan together finished in 4.2 ms against
+				10.4 ms for the CPU alone, using all of its threads. That is 2.5x faster, and every result
+				matched the software golden at every one of the 164 split points we measured. The scheduler
+				chose the split from measured costs; nobody tuned it by hand.
 			</p>
 		</div>
 		<div class="grid gap-4">
@@ -43,7 +45,8 @@
 				<p class="text-lg text-white mb-2">204K LUTs · 10 GB DDR3 · PCIe x8</p>
 				<p class="text-sm text-neutral-400">
 					Two memory systems (2 GB onboard for bandwidth, 8 GB SODIMM for resident capacity) and
-					eight parallel lanes. Where the fused temporal workflow now beats the CPU baseline.
+					eight parallel lanes. CPU and card together: 2.5x the CPU alone on a resident scan,
+					bit-exact.
 				</p>
 			</div>
 			<div class="rounded-lg border border-dashed border-neutral-700 p-6 opacity-50">
