@@ -3,6 +3,7 @@
 	import Headline from '$lib/home/Headline.svelte';
 	import About from '$lib/home/About.svelte';
 	import Proof from '$lib/home/Proof.svelte';
+	import Code from '$lib/home/Code.svelte';
 	import Contact from '$lib/home/Contact.svelte';
 </script>
 
@@ -53,4 +54,5 @@
 <Headline />
 <About />
 <Proof />
+<Code />
 <Contact />

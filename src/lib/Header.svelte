@@ -39,6 +39,11 @@
 						class="py-2 px-2 rounded text-neutral-300 font-semibold hover:text-neutral-500 hover:bg-neutral-800 transition duration-300"
 						>Proof</a
 					>
+					<a
+						href="#code"
+						class="py-2 px-2 rounded text-neutral-300 font-semibold hover:text-neutral-500 hover:bg-neutral-800 transition duration-300"
+						>Code</a
+					>
 				</div>
 
 				<!-- Secondary Navbar items -->
@@ -92,6 +97,13 @@
 					href="#proof"
 					class="block text-sm px-2 py-4 text-neutral-200 hover:bg-neutral-500 transition duration-300"
 					>Proof</a
+				>
+			</li>
+			<li>
+				<a
+					href="#code"
+					class="block text-sm px-2 py-4 text-neutral-200 hover:bg-neutral-500 transition duration-300"
+					>Code</a
 				>
 			</li>
 			<li>
