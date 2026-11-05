@@ -16,7 +16,8 @@ export const RESULTS: Result[] = [
     benchmark: 'TPC-H query 6, with the table loaded on the card',
     board: 'dpv2',
     outcome: '~2.5× faster with the card added',
-    detail: 'The planner splits each query between the CPU and the FPGA based on measured costs.'
+    detail:
+      'With a six-million-row table on the card, the CPU and card together finished in 4.2 ms, against 10.4 ms for the CPU alone. The planner picks the split from measured costs.'
   },
   {
     benchmark: 'A full day of NYSE TAQ trades turned into OHLCV bars',
@@ -62,7 +63,8 @@ export const BOARDS: Board[] = [
     specs: [
       { key: 'Logic', value: '204K LUTs' },
       { key: 'Memory', value: '2 GB onboard + 8 GB SODIMM DDR3' },
-      { key: 'Host link', value: 'PCIe x8' }
+      { key: 'Host link', value: 'PCIe x8' },
+      { key: 'Card cost', value: 'About $700' }
     ]
   },
   {
