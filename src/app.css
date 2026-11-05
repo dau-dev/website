@@ -1,4 +1,40 @@
-/* Write your global styles here, in PostCSS syntax */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import '@dau-dev/branding/fonts.css';
+@import '@dau-dev/branding/tokens.css';
+@import 'tailwindcss';
+
+/* Brand tokens come from @dau-dev/branding; this maps them onto Tailwind names so
+ * utilities like bg-raised and text-muted follow the theme. */
+@theme inline {
+  --color-bg: var(--dau-bg);
+  --color-raised: var(--dau-bg-raised);
+  --color-fg: var(--dau-fg);
+  --color-muted: var(--dau-fg-muted);
+  --color-line: var(--dau-border);
+  --font-sans: var(--dau-font-sans);
+  --font-mono: var(--dau-font-mono);
+}
+
+html {
+  scroll-padding-top: 5rem;
+}
+
+body {
+  color: var(--dau-fg);
+  background: var(--dau-bg);
+  font-family: var(--dau-font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+/* Section label: mono, small, uppercase. Used where a label names the content
+ * below it, not as decoration on every block. */
+.label {
+  color: var(--dau-fg-muted);
+  font-family: var(--dau-font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

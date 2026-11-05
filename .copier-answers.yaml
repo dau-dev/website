@@ -1,0 +1,11 @@
+# Changes here will be overwritten by Copier
+_commit: 53e3805
+_src_path: https://github.com/python-project-templates/base.git
+add_extension: site-sveltekit
+brand_name: dau
+github: dau-dev
+project_description: Workload-shaped FPGA acceleration for analytical data.
+project_name: website
+site_adapter: static
+site_url: https://dau.dev
+
