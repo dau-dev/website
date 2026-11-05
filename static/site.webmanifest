@@ -1,16 +1,13 @@
 {
-	"name": "dau — Data. Accelerated.",
-	"short_name": "dau",
-	"description": "Workload-shaped FPGA acceleration for Polars, dataframe, time-series, and analytical workloads.",
-	"start_url": "/",
-	"display": "standalone",
-	"background_color": "#111111",
-	"theme_color": "#111111",
-	"icons": [
-		{
-			"src": "/favicon.png",
-			"sizes": "128x128",
-			"type": "image/png"
-		}
-	]
+  "name": "dau — Data, accelerated.",
+  "short_name": "dau",
+  "description": "Workload-shaped FPGA acceleration for Polars, dataframe, time-series, and analytical workloads.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#202021",
+  "theme_color": "#202021",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/img/dau-mark.png", "sizes": "512x512", "type": "image/png" }
+  ]
 }

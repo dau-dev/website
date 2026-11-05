@@ -1,11 +1,14 @@
-<script>
-	import '../app.css';
-	import Header from '$lib/Header.svelte';
-	import Footer from '$lib/Footer.svelte';
+<script lang="ts">
+  import { CookieNotice } from '@dau-dev/branding';
+  import '../app.css';
+
+  let { children } = $props();
 </script>
 
-<div class="relative bg-dark overflow-hidden h-max">
-	<Header />
-	<slot />
-	<Footer />
-</div>
+{@render children()}
+
+<CookieNotice>
+  dau.dev doesn't use cookies or analytics. Your theme setting and whether you closed this notice are stored only in
+  your browser.
+  <a href="/privacy/">Privacy</a>
+</CookieNotice>
