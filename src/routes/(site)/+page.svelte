@@ -7,7 +7,7 @@
   const flywheel = [
     { step: 'Observe', text: 'Profile real workloads.' },
     { step: 'Select', text: 'Choose the operations worth accelerating.' },
-    { step: 'Compose', text: 'Build a right-sized configuration from tested tiles.' },
+    { step: 'Compose', text: 'Build a configuration from tested tiles.' },
     { step: 'Verify', text: 'Compare against the software reference in simulation and on the board.' },
     { step: 'Measure', text: 'Deploy, measure, and use the results in the next design.' }
   ];
@@ -85,8 +85,7 @@
     {#snippet hardware()}
       <p class="text-3xl leading-tight font-bold tracking-tight md:text-4xl">Scans run on the FPGA.</p>
       <p class="mt-4 max-w-sm leading-relaxed text-muted">
-        Filters, derived columns, and aggregations stream through tiles built for the workload. Rows can stay in device
-        memory between queries.
+        Filters, derived columns, and aggregations run on the card. Rows can stay in device memory between queries.
       </p>
     {/snippet}
     {#snippet software()}
@@ -107,8 +106,8 @@
         Hardware built for your workload, with the software you already use.
       </h2>
       <p class="mt-6 text-lg leading-relaxed text-muted">
-        Configurations are assembled from reusable operations and sized to the job. Your code stays the same whether it
-        runs on one accelerator next to a laptop or several cards in a server.
+        Each configuration is assembled from reusable operations and includes only the ones the job uses. Your code
+        stays the same whether it runs on one accelerator next to a laptop or several cards in a server.
       </p>
     </div>
 
@@ -168,13 +167,13 @@
     <div class="min-w-0">
       <p class="label mb-4">Open source</p>
       <h2 class="text-3xl font-semibold tracking-tight text-balance md:text-5xl">
-        An open core that runs on open hardware.
+        An open core that runs on boards you can buy.
       </h2>
       <p class="mt-6 text-lg leading-relaxed text-muted">
         The operator tiles and their reference models, the build system, the simulator, the host driver, and the
-        scheduler are Apache 2.0 licensed and published on GitHub and PyPI. They run on open FPGA hardware, so you can
-        build the same bitstreams we run and add tiles in your own package. Boards built for dau are available through
-        the design partner program. The Polars integration will be released soon.
+        scheduler are Apache 2.0 licensed and published on GitHub and PyPI. They run on off-the-shelf FPGA development
+        boards, so you can build the same bitstreams we run and add tiles in your own package. Boards built for dau are
+        available through the design partner program. The Polars integration will be released soon.
       </p>
       <!-- Focusable so keyboard users can scroll it when it overflows. -->
       <!-- svelte-ignore a11y_no_noninteractive_tabindex -->

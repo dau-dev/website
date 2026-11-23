@@ -25,8 +25,8 @@
     <span class="font-light">dau splits analytics queries</span> <span class="font-extrabold">between the CPU and an FPGA card.</span>
   </h1>
   <p class="mt-6 text-lg leading-relaxed text-muted">
-    dau builds FPGA accelerators sized to analytical workloads, along with open-source software that decides how much of
-    each query runs on the FPGA.
+    dau builds PCIe FPGA cards that hold a table in their own memory and scan it for repeated queries, along with
+    open-source software that decides how much of each query runs on the card.
   </p>
 </div>
 
@@ -35,8 +35,8 @@
   <h2 class="text-3xl font-semibold tracking-tight">Add an FPGA card to the existing machine.</h2>
   <div class="mt-5 grid max-w-3xl gap-4 leading-relaxed text-muted">
     <p>
-      Analytical software already runs on fast CPUs. dau adds an FPGA card to the machine and splits the work between
-      the two, so queries run faster without rewriting the software.
+      Analytical software already runs on fast CPUs. dau adds an FPGA card to the machine and splits each query between
+      the two. The queries are ordinary Polars, an open-source dataframe library, and need no changes to use the card.
     </p>
     <p>
       dau loads rows into device memory once and runs repeated filter, derive, and aggregate queries against them. A
@@ -83,8 +83,9 @@
   <h2 class="text-3xl font-semibold tracking-tight">Open core, dau boards.</h2>
   <div class="mt-5 grid max-w-3xl gap-4 leading-relaxed text-muted">
     <p>
-      The software is Apache 2.0, published on PyPI, and runs on open FPGA hardware. Revenue comes from boards built for
-      dau and from configurations we build and verify for a customer's workloads.
+      The software is Apache 2.0, published on PyPI, and runs on off-the-shelf FPGA development boards that anyone can
+      buy. Revenue comes from boards built for dau and from configurations we build and verify for a customer's
+      workloads.
     </p>
   </div>
   <div class="mt-6 max-w-xl">
