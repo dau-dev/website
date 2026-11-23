@@ -72,7 +72,7 @@ test('cookie notice is dismissed once and stays dismissed', async ({ page }) => 
 test('investor overview is reachable but not promoted', async ({ page, request }) => {
   await page.goto('/invest/');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow');
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('with an FPGA next to the CPU.');
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('between the CPU and an FPGA card.');
   await expect(page.getByTestId('draft-banner')).toBeVisible();
   await expect(page.locator('#ask')).toContainText('TBD');
 

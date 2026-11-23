@@ -22,17 +22,17 @@
 
 <div class="max-w-3xl">
   <h1 class="text-5xl leading-[0.95] tracking-[-0.04em] text-balance md:text-6xl">
-    <span class="font-light">Faster analytics,</span> <span class="font-extrabold">with an FPGA next to the CPU.</span>
+    <span class="font-light">dau splits analytics queries</span> <span class="font-extrabold">between the CPU and an FPGA card.</span>
   </h1>
   <p class="mt-6 text-lg leading-relaxed text-muted">
     dau builds FPGA accelerators sized to analytical workloads, along with open-source software that decides how much of
-    each query the FPGA should run.
+    each query runs on the FPGA.
   </p>
 </div>
 
 <section id="thesis" class="mt-20 scroll-mt-24">
   <p class="label mb-3">01 · Thesis</p>
-  <h2 class="text-3xl font-semibold tracking-tight">Make the existing machine faster.</h2>
+  <h2 class="text-3xl font-semibold tracking-tight">Add an FPGA card to the existing machine.</h2>
   <div class="mt-5 grid max-w-3xl gap-4 leading-relaxed text-muted">
     <p>
       Analytical software already runs on fast CPUs. dau adds an FPGA card to the machine and splits the work between
@@ -96,8 +96,8 @@
   <p class="label mb-3">05 · Market</p>
   <h2 class="text-3xl font-semibold tracking-tight">Repeated queries over the same data.</h2>
   <p class="mt-5 max-w-3xl leading-relaxed text-muted">
-    The first workloads are time-series and market data: bars, windows, and as-of joins run again and again over the
-    same history.
+    The first workloads are time-series and market data: bars, windows, and as-of joins run repeatedly over the same
+    history.
   </p>
   <div class="mt-6 max-w-xl">
     <SpecTable
@@ -111,7 +111,7 @@
 
 <section id="roadmap" class="mt-20 scroll-mt-24">
   <p class="label mb-3">06 · Roadmap</p>
-  <h2 class="text-3xl font-semibold tracking-tight">Faster links first, then more cards.</h2>
+  <h2 class="text-3xl font-semibold tracking-tight">The Polars release, then a third board, then several cards.</h2>
   <ol class="mt-6 grid max-w-3xl gap-4 leading-relaxed text-muted">
     <li><strong class="text-fg">Release the Polars integration</strong> so the whole stack installs from PyPI.</li>
     <li>

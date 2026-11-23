@@ -29,7 +29,7 @@ export const MILESTONES = [
 export const RISKS = [
   {
     title: 'Host CPUs keep getting faster',
-    text: 'dau has to keep adding speed on top of each new generation of host CPU, which affects which workloads it targets.'
+    text: 'Each new generation of host CPU is faster, so dau has to keep adding speed. That changes which workloads it targets.'
   },
   {
     title: 'Data transfer is the bottleneck',
@@ -37,7 +37,7 @@ export const RISKS = [
   },
   {
     title: 'Toolchain dependence',
-    text: 'The build depends on AMD Vivado. Using an FPGA outside that toolchain means porting the build, however cheap the part.'
+    text: 'The build depends on AMD Vivado. Using an FPGA outside that toolchain means porting the build, even if the part is cheap.'
   },
   {
     title: 'dpv3 part selection is open',
