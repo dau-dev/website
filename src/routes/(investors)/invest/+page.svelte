@@ -22,7 +22,8 @@
 
 <div class="max-w-3xl">
   <h1 class="text-5xl leading-[0.95] tracking-[-0.04em] text-balance md:text-6xl">
-    <span class="font-light">dau splits analytics queries</span> <span class="font-extrabold">between the CPU and an FPGA card.</span>
+    <span class="font-light">dau splits analytics queries</span>
+    <span class="font-extrabold">between the CPU and an FPGA card.</span>
   </h1>
   <p class="mt-6 text-lg leading-relaxed text-muted">
     dau builds PCIe FPGA cards that hold a table in their own memory and scan it for repeated queries, along with
