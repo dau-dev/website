@@ -7,7 +7,7 @@
   const flywheel = [
     { step: 'Observe', text: 'Profile real workloads.' },
     { step: 'Select', text: 'Choose the operations worth accelerating.' },
-    { step: 'Compose', text: 'Build a configuration from tested tiles.' },
+    { step: 'Compose', text: 'Build a configuration from tested cores.' },
     { step: 'Verify', text: 'Compare against the software reference in simulation and on the board.' },
     { step: 'Measure', text: 'Deploy, measure, and use the results in the next design.' }
   ];
@@ -15,7 +15,7 @@
   const repos = [
     {
       name: 'dau-core',
-      text: 'Operator tiles in SystemVerilog, with bit-exact reference models, capability contracts, and the registry.'
+      text: 'Operator cores in SystemVerilog, with bit-exact reference models, capability contracts, and the registry.'
     },
     { name: 'dau-driver', text: 'Host I/O over XDMA on Linux and macOS: discovery, registers, DMA, and jobs.' },
     { name: 'dau-scheduler', text: 'Decides how much of each query runs on the FPGA, based on measured costs.' },
@@ -28,7 +28,7 @@
   <title>dau | FPGA acceleration for Polars and analytical workloads</title>
   <meta
     name="description"
-    content="dau selectively maps Polars, dataframe, time-series, and analytical workloads onto right-sized FPGA dataflow, with CPU fallback and familiar software."
+    content="dau runs selected Polars, dataframe, and time-series operations on an FPGA card and leaves the rest on the CPU."
   />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://dau.dev/" />
@@ -103,7 +103,7 @@
     <div class="max-w-3xl">
       <p class="label mb-4">Platform</p>
       <h2 class="text-3xl font-semibold tracking-tight text-balance md:text-5xl">
-        Hardware built for your workload, with the software you already use.
+        The card is configured for your workload. Your code does not change.
       </h2>
       <p class="mt-6 text-lg leading-relaxed text-muted">
         Each configuration is assembled from reusable operations and includes only the ones the job uses. Your code
@@ -117,7 +117,9 @@
 
     <div id="flywheel" class="mt-24 grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
       <div>
-        <h3 class="text-2xl font-semibold tracking-tight md:text-3xl">Each deployment shapes the next design.</h3>
+        <h3 class="text-2xl font-semibold tracking-tight md:text-3xl">
+          Each deployment's measurements go into the next design.
+        </h3>
         <p class="mt-4 leading-relaxed text-muted">
           We measure real workloads to decide what runs in hardware now and what to build next. Every design is verified
           the same way before it ships.
@@ -170,7 +172,7 @@
         An open core that runs on boards you can buy.
       </h2>
       <p class="mt-6 text-lg leading-relaxed text-muted">
-        The operator tiles and their reference models, the build system, the simulator, the host driver, and the
+        The operator cores and their reference models, the build system, the simulator, the host driver, and the
         scheduler are Apache 2.0 licensed and published on GitHub and PyPI. They run on off-the-shelf FPGA development
         boards, so you can build the same bitstreams we run and add tiles in your own package. Boards built for dau are
         available through the design partner program. The Polars integration will be released soon.

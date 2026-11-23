@@ -9,11 +9,11 @@ export const TBD = 'TBD';
 export const CONTACT = 'admin@1kbgz.com';
 
 export const RELEASES = [
-  { key: 'dau-core', value: '0.4.0 on PyPI', note: 'Operator tiles, golden models, capability contracts' },
-  { key: 'dau-build', value: '0.15.2 on PyPI', note: 'Specs to bitstream, Vivado or yosys' },
-  { key: 'dau-sim', value: '0.3.0 on PyPI', note: 'Cycle-accurate simulation' },
-  { key: 'dau-driver', value: '0.1.0 on PyPI', note: 'XDMA host I/O on Linux and macOS' },
-  { key: 'dau-scheduler', value: '0.1.0 on PyPI', note: 'Cost-based host/device split' },
+  { key: 'dau-core', value: '0.14.0 on PyPI', note: 'Operator cores, golden models, capability contracts' },
+  { key: 'dau-build', value: '0.21.0 on PyPI', note: 'Specs to bitstream, Vivado or yosys' },
+  { key: 'dau-sim', value: '0.4.0 on PyPI', note: 'Cycle-accurate simulation' },
+  { key: 'dau-driver', value: '0.5.0 on PyPI', note: 'XDMA host I/O on Linux and macOS' },
+  { key: 'dau-scheduler', value: '0.4.0 on PyPI', note: 'Cost-based host/device split' },
   { key: 'dau-polars', value: 'Private, release in preparation', note: 'Polars plan capture and execution' }
 ];
 
