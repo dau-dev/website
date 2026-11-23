@@ -7,7 +7,7 @@
   const flywheel = [
     { step: 'Observe', text: 'Profile real workloads.' },
     { step: 'Select', text: 'Choose the operations worth accelerating.' },
-    { step: 'Compose', text: 'Build a configuration from tested cores.' },
+    { step: 'Compose', text: 'Build a configuration from tested tiles.' },
     { step: 'Verify', text: 'Compare against the software reference in simulation and on the board.' },
     { step: 'Measure', text: 'Deploy, measure, and use the results in the next design.' }
   ];
